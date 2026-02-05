@@ -33,6 +33,9 @@ export function LetsWorkTogether() {
                     className="w-full h-full object-cover opacity-[0.02]"
                 />
             </div>
+            {/* Gradient Overlay for blending with previous section */}
+            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none" />
+
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_70%)] z-0" />
 
             <div className="relative flex flex-col items-center gap-12 w-full max-w-5xl z-10">
