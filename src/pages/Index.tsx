@@ -1,14 +1,14 @@
 import HeroSection from "@/components/HeroSection";
-import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
-import Footer from "@/components/Footer";
+import { LetsWorkTogether } from "@/components/ui/lets-work-section";
+import { Footer } from "@/components/ui/footer-section";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection />
-      <BenefitsSection />
       <GallerySection />
+      <LetsWorkTogether />
       <Footer />
     </main>
   );
