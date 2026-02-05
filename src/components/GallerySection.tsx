@@ -106,7 +106,7 @@ const GallerySection = ({
   }, [carouselApi]);
 
   return (
-    <section className="relative w-full py-24 md:py-32 bg-black overflow-hidden">
+    <section className="relative w-full py-32 md:py-52 bg-black overflow-hidden">
       {/* Background Image */}
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -118,7 +118,19 @@ const GallerySection = ({
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
       </div>
 
-      <div className="w-full relative z-10">
+      {/* Watermark Title */}
+      <div className="absolute top-20 left-0 w-full flex justify-center z-0 overflow-hidden select-none pointer-events-none">
+        <div className="relative flex items-center justify-center">
+          <h2 className="text-[13vw] md:text-[11vw] font-bold font-display uppercase tracking-[-0.05em] text-white/[0.01] whitespace-nowrap leading-none">
+            Faça tudo a pé
+          </h2>
+          <span className="absolute text-xl md:text-3xl font-light text-white capitalize tracking-widest">
+            Localização Privilegiada
+          </span>
+        </div>
+      </div>
+
+      <div className="w-full relative z-10 mt-16 md:mt-24">
         <Carousel
           setApi={setCarouselApi}
           plugins={[
