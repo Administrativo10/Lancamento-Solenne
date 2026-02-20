@@ -30,8 +30,8 @@ const HeroSection = () => {
         <div className="flex flex-col items-end max-w-5xl md:max-w-6xl space-y-8 md:space-y-10 ml-auto text-right">
 
           {/* Badge - Premium Look */}
-          <div className="animate-fade-up opacity-0 relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-amber-300 rounded-full opacity-30 blur group-hover:opacity-50 transition duration-1000"></div>
+          <div className="animate-fade-up opacity-0 relative group/badge">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-amber-300 rounded-full opacity-30 blur group-hover/badge:opacity-50 transition duration-1000"></div>
             <div className="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/40 border border-white/10 backdrop-blur-md">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
               <span className="text-xs font-medium tracking-widest uppercase text-white/90">
@@ -59,9 +59,9 @@ const HeroSection = () => {
           >
             <p className="text-base md:text-lg text-white/90 font-light leading-relaxed">
               <span className="text-amber-400 font-bold tracking-widest text-sm mr-2 uppercase">PS:</span>
-              Não espere o estande ficar pronto e o <span className="italic text-white relative inline-block group">
+              Não espere o estande ficar pronto e o <span className="italic text-white relative inline-block group/text">
                 valor aumentar
-                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-amber-400/50 transform scale-x-0 transition-transform duration-700 ease-in-out group-hover:scale-x-100 animate-[pulse_3s_infinite]"></span>
+                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-amber-400/50 transform scale-x-0 transition-transform duration-700 ease-in-out group-hover/text:scale-x-100 animate-[pulse_3s_infinite]"></span>
               </span>.
             </p>
           </div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
             className="pt-2 animate-fade-up opacity-0 w-full md:w-auto flex flex-col items-center"
             style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}
           >
-            <ShinyButton onClick={handleWhatsAppClick} className="group">
+            <ShinyButton onClick={handleWhatsAppClick} id="hero-whatsapp-btn">
               <span className="flex items-center gap-3">
                 <svg
                   className="size-6 fill-current text-[#25D366]"

@@ -76,7 +76,8 @@ export function LetsWorkTogether() {
                         onClick={handleBookCall}
                         onMouseEnter={() => setIsButtonHovered(true)}
                         onMouseLeave={() => setIsButtonHovered(false)}
-                        className="group relative flex items-center gap-4 transition-all duration-500 cursor-pointer"
+                        className="relative flex items-center gap-4 transition-all duration-500 cursor-pointer"
+                        id="footer-whatsapp-btn"
                         style={{
                             transform: showSuccess
                                 ? isButtonHovered
@@ -171,7 +172,7 @@ export function LetsWorkTogether() {
                 </div>
 
                 <div
-                    className="group relative cursor-pointer w-full text-center"
+                    className="relative cursor-pointer w-full text-center"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                     onClick={(e) => handleClick(e as unknown as React.MouseEvent<HTMLAnchorElement>)}
