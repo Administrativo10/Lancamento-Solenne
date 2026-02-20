@@ -76,7 +76,7 @@ export function LetsWorkTogether() {
                         onClick={handleBookCall}
                         onMouseEnter={() => setIsButtonHovered(true)}
                         onMouseLeave={() => setIsButtonHovered(false)}
-                        className="relative flex items-center gap-4 transition-all duration-500 cursor-pointer"
+                        className="relative flex items-center gap-4 transition-all duration-500 cursor-pointer [&_*]:pointer-events-none"
                         id="footer-whatsapp-btn"
                         style={{
                             transform: showSuccess
@@ -90,7 +90,7 @@ export function LetsWorkTogether() {
                     >
                         {/* Left line */}
                         <div
-                            className="h-px w-8 bg-zinc-800 transition-all duration-500 sm:w-16"
+                            className="pointer-events-none h-px w-8 bg-zinc-800 transition-all duration-500 sm:w-16"
                             style={{
                                 transform: isButtonHovered ? "scaleX(0)" : "scaleX(1)",
                                 opacity: isButtonHovered ? 0 : 0.5,
@@ -99,7 +99,7 @@ export function LetsWorkTogether() {
 
                         {/* Button content */}
                         <div
-                            className="relative flex items-center gap-3 overflow-hidden rounded-full border border-zinc-800 px-8 py-4 transition-all duration-500 bg-black"
+                            className="pointer-events-none relative flex items-center gap-3 overflow-hidden rounded-full border border-zinc-800 px-8 py-4 transition-all duration-500 bg-black"
                             style={{
                                 borderColor: isButtonHovered ? "#25D366" : "#27272A",
                                 backgroundColor: isButtonHovered ? "#25D366" : "black",
@@ -133,7 +133,7 @@ export function LetsWorkTogether() {
 
                         {/* Right line */}
                         <div
-                            className="h-px w-8 bg-zinc-800 transition-all duration-500 sm:w-16"
+                            className="pointer-events-none h-px w-8 bg-zinc-800 transition-all duration-500 sm:w-16"
                             style={{
                                 transform: isButtonHovered ? "scaleX(0)" : "scaleX(1)",
                                 opacity: isButtonHovered ? 0 : 0.5,

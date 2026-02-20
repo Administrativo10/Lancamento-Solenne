@@ -9,8 +9,8 @@ interface ShinyButtonProps extends React.ComponentProps<"button"> {
 
 export function ShinyButton({ children, className = "", ...props }: ShinyButtonProps) {
     return (
-        <button className={`shiny-cta ${className}`} {...props}>
-            <span>{children}</span>
+        <button className={`shiny-cta [&_*]:pointer-events-none ${className}`} {...props}>
+            <span className="pointer-events-none">{children}</span>
         </button>
     )
 }
